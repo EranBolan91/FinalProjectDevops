@@ -15,4 +15,7 @@ document.getElementById("sign").addEventListener("click", (e) =>{
     if(username === "admin" && password !== "admin"){
         document.getElementById("message").innerHTML = "Password is incorrect";
     }
+    if(username !== "admin" && password !== "admin"){
+        document.getElementById("message").innerHTML = "Username and Password are incorrect";
+    }
 })
